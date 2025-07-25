@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+ 
+        *{
+            padding: 0px;
+            margin: 0px;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+        }
+        h2{
+            
+            text-shadow: 2px 20px lightgray;
+        }
+
+        :root{
+            font-size: 16px;
+            --color1:#ddd;
+            --color2:rebeccapurple;
+            font-size: 16px;
+            padding: 16px;
+        }
+        body{
+            font-size: 22px;
+        }
+        main{
+           
+        }
+        section.container{
+           width: calc(50% - 40px);
+           width: min(50% , 400px);
+           float: left;
+           margin: 20px;
+            /* min-height: 200px;
+            max-height: 400px; 
+            */
+            height: 300px;
+            font-size: 1.5rem!important;
+
+            background-color: blanchedalmond;
+            overflow: auto;
+
+            
+           
+
+        }
+        section.container2{
+             font-size: 2rem!important;
+        }
+        form{
+            width: 50%;
+            margin: 50px auto;
+            padding: 50px;
+            border: 1px solid var(--color1);
+            -webkit-box-shadow: 10px 10px 10px lightgray;
+                    box-shadow: 10px 10px 10px lightgray;
+            -webkit-box-shadow: 11px 10px 15px -3px rgba(0,0,0,0.1),-15px 13px 15px -3px rgba(0,0,0,0.1);
+                    box-shadow: 11px 10px 15px -3px rgba(0,0,0,0.1),-15px 13px 15px -3px rgba(0,0,0,0.1);
+            -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+            background-color: cadetblue;
+           background-image: -webkit-gradient(linear, left top, left bottom, from(burlywood), to(cadetblue));
+           background-image: -o-linear-gradient(top, burlywood, cadetblue);
+           background-image: linear-gradient(180deg, burlywood, cadetblue);
+           background: #82a9b8;
+           background: -webkit-gradient(linear,left top, right top,from(rgba(130, 169, 184, 1)), color-stop(50%, rgba(130, 186, 117, 1)), to(rgba(235, 225, 143, 1)));
+           background: -o-linear-gradient(left,rgba(130, 169, 184, 1) 0%, rgba(130, 186, 117, 1) 50%, rgba(235, 225, 143, 1) 100%);
+           background: linear-gradient(90deg,rgba(130, 169, 184, 1) 0%, rgba(130, 186, 117, 1) 50%, rgba(235, 225, 143, 1) 100%);
+
+           background: hsla(332, 53%, 82%, 1);
+
+            background: -webkit-gradient(linear, left top, right top, from(hsla(332, 53%, 82%, 1)), to(hsla(176, 57%, 89%, 1)));
+
+            background: -o-linear-gradient(left, hsla(332, 53%, 82%, 1) 0%, hsla(176, 57%, 89%, 1) 100%);
+
+            background: linear-gradient(90deg, hsla(332, 53%, 82%, 1) 0%, hsla(176, 57%, 89%, 1) 100%);
+
+            background: -webkit-linear-gradient(90deg, hsla(332, 53%, 82%, 1) 0%, hsla(176, 57%, 89%, 1) 100%);
+
+            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E9B7CE", endColorstr="#D3F3F1", GradientType=1 );
+                    }
+
+            .trans{
+                width: 100px;
+                height: 100px;
+                background-color: brown;
+                -webkit-transform: translate(50px,-50px);
+                    -ms-transform: translate(50px,-50px);
+                        transform: translate(50px,-50px);   /*move an element  */
+                -webkit-transform: rotate(180deg);
+                    -ms-transform: rotate(180deg);
+                        transform: rotate(180deg);
+                -webkit-transform: scale(2,3);
+                    -ms-transform: scale(2,3);
+                        transform: scale(2,3);
+                -webkit-transform: scaleY(2);
+                    -ms-transform: scaleY(2);
+                        transform: scaleY(2);
+                -webkit-transform: skew(-10deg);
+                    -ms-transform: skew(-10deg);
+                        transform: skew(-10deg);
+                -webkit-transform:  translate(200px,80px) rotate(35deg)  skew(-10deg) scale(2);
+                    -ms-transform:  translate(200px,80px) rotate(35deg)  skew(-10deg) scale(2);
+                        transform:  translate(200px,80px) rotate(35deg)  skew(-10deg) scale(2);
+                
+            }   
+          
+           .transition{
+            width: 100px;
+            height: 100px;
+            background-color: #82a9b8;
+            
+           
+            -webkit-transition:-webkit-transform 2s;
+            
+           
+            transition:-webkit-transform 2s;
+            
+           
+            -o-transition:transform 2s;
+            
+           
+            transition:transform 2s;
+            
+           
+            transition:transform 2s, -webkit-transform 2s;
+
+           }
+           .transition:hover{
+            /* width: 150px;
+            height: 150px; */
+            -webkit-transform: rotate(35deg);
+                -ms-transform: rotate(35deg);
+                    transform: rotate(35deg);
+            /* background-color: cornflowerblue; */
+            
+           }
+
+           input{
+            width: 100px;
+            padding: 20px;
+          
+            -webkit-transition: width 2s;
+          
+            -o-transition: width 2s;
+          
+            transition: width 2s;
+
+           }
+           input:focus{
+            width: 100%;
+           }
+           form button{
+            background-color: #82a9b8;
+            font-weight: bold;
+            padding: 20px;
+            border: none;
+            -webkit-transition: -webkit-transform 2s;
+            transition: -webkit-transform 2s;
+            -o-transition: transform 2s;
+            transition: transform 2s;
+            transition: transform 2s, -webkit-transform 2s;
+           }
+           form button:hover{
+            -webkit-transform: scale(0.8,0.8);
+                -ms-transform: scale(0.8,0.8);
+                    transform: scale(0.8,0.8);
+           }
+           .animation{
+            width: 100px;
+            height: 100px;
+            background-color: rebeccapurple;
+            position: relative;
+            -webkit-animation-name:anim1 ;
+                    animation-name:anim1 ;
+            -webkit-animation-duration: 5s;
+                    animation-duration: 5s;
+            -webkit-animation-iteration-count: infinite;
+                    animation-iteration-count: infinite;
+            -webkit-animation-delay: 3s;
+                    animation-delay: 3s;
+           
+
+           }
+           @-webkit-keyframes anim1 {
+            0%{
+                left: 0px;
+            }
+            50%{
+                left: calc(100% - 120px);
+            }
+            100%{
+                left: 0px;
+            }
+            
+           }
+           @keyframes anim1 {
+            0%{
+                left: 0px;
+            }
+            50%{
+                left: calc(100% - 120px);
+            }
+            100%{
+                left: 0px;
+            }
+            
+           }
+           .tooltip{
+            padding: 20px;
+            width: 150px;
+            color: white;
+            text-align: center;
+            border-radius: 20px;
+            margin: 50px auto;
+            background-color: black;
+            position: relative;
+
+           }
+           .tooltip::after{
+            content: " ";
+            position: absolute;
+            left: 100%;
+            
+            
+            border: 10px solid green;
+            
+            border-bottom-color: transparent;
+            border-top-color: transparent;
+            border-right-color: transparent;
+            border-left-color: black;
+
+           }
+           .flexb{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+           }
+           .flexb p{
+            padding: 20px;
+            width: 23%;
+            border: 1px solid gray;
+           }
+
+           @media screen and (max-width: 800px) {
+             .flexb p{
+                width: 50%;
+             }
+            }
+           @media screen and (max-width: 400px) {
+             .flexb{
+           
+            -webkit-box-orient: vertical;
+           
+            -webkit-box-direction: normal;
+           
+                -ms-flex-direction: column;
+           
+                    flex-direction: column;
+            }
+
+             .flexb p{
+                width: 100%;
+             }
+            }
+
+    </style>
+</head>
+<body>
+    <section class="flexb">
+        <p>welcome </p>
+        <p>welcome </p>
+        <p>welcome </p>
+        <p>welcome </p>
+        <p>welcome </p>
+        <p>welcome </p>
+        <p>welcome </p>
+        <p>welcome </p>
+        <p>welcome </p>
+        <p>welcome </p>
+    </section>
+  
+    <div class="tooltip">tooltip</div>
+    <section class="animation"></section>
+    <section class="transition">
+
+    </section>
+    <section class="trans">
+        <p>        welcome s3 here 
+        </p>
+      
+    </section>
+    <form action="">
+        <input type="text" placeholder="Search">
+        <button>Sign in</button>
+    </form>
+    <main>
+        <h2>welcome all here s3 students</h2>
+            <section class="container">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum atque rem neque modi, minima repellat, deserunt est sit ex fuga quis quod vitae porro quasi in soluta, omnis suscipit eligendi?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum atque rem neque modi, minima repellat, deserunt est sit ex fuga quis quod vitae porro quasi in soluta, omnis suscipit eligendi?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum atque rem neque modi, minima repellat, deserunt est sit ex fuga quis quod vitae porro quasi in soluta, omnis suscipit eligendi?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum atque rem neque modi, minima repellat, deserunt est sit ex fuga quis quod vitae porro quasi in soluta, omnis suscipit eligendi?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum atque rem neque modi, minima repellat, deserunt est sit ex fuga quis quod vitae porro quasi in soluta, omnis suscipit eligendi?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum atque rem neque modi, minima repellat, deserunt est sit ex fuga quis quod vitae porro quasi in soluta, omnis suscipit eligendi?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum atque rem neque modi, minima repellat, deserunt est sit ex fuga quis quod vitae porro quasi in soluta, omnis suscipit eligendi?
+            </section>
+            <section class="container">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum atque rem neque modi, minima repellat, deserunt est sit ex fuga quis quod vitae porro quasi in soluta, omnis suscipit eligendi?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum atque rem neque modi, minima repellat, deserunt est sit ex fuga quis quod vitae porro quasi in soluta, omnis suscipit eligendi?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum atque rem neque modi, minima repellat, deserunt est sit ex fuga quis quod vitae porro quasi in soluta, omnis suscipit eligendi?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum atque rem neque modi, minima repellat, deserunt est sit ex fuga quis quod vitae porro quasi in soluta, omnis suscipit eligendi?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum atque rem neque modi, minima repellat, deserunt est sit ex fuga quis quod vitae porro quasi in soluta, omnis suscipit eligendi?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum atque rem neque modi, minima repellat, deserunt est sit ex fuga quis quod vitae porro quasi in soluta, omnis suscipit eligendi?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum atque rem neque modi, minima repellat, deserunt est sit ex fuga quis quod vitae porro quasi in soluta, omnis suscipit eligendi?
+            </section>
+
+    </main>
+    
+
+</body>
+</html>
